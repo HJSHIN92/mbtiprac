@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="hyeni">
+    <meta name="keywords" content="십이간지 연애유형">
+    <meta name="description" content="십이간지 연애유형">
+
+    <!-- sns share -->
+    <meta property="og:url" content="https://mbtitestfirsttry.netlify.app" />
+    <meta property="og:title" content="십이간지 연애유형" />
+    <mete property="og:type" content="website" />
+    <mete property="og:image" content="img/share.png" />  
+    <mete property="og:description" content="십이간지로 알아보는 연애유형" />
+
+
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+    integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+    <script>
+    Kakao.init('8157ea1e7279a1aa6459ec2f30f90f20'); // 사용하려는 앱의 JavaScript 키 입력
+    </script>
+</head>
+
+<body>
+    <a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
+    <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+        alt="카카오톡 공유 보내기 버튼" />
+    </a>
+
+    <script>
+    function shareMessage() {
+        Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+            title: '십이간지 연애유형',
+            description: '#mbti #연애',
+            imageUrl:
+            'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+            link: {
+            // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+            mobileWebUrl: 'https://mbtitestfirsttry.netlify.app',
+            webUrl: 'https://mbtitestfirsttry.netlify.app',
+            },
+        },
+        social: {
+            likeCount: 286,
+            commentCount: 45,
+            sharedCount: 845,
+        },
+        buttons: [
+            {
+            title: '웹으로 보기',
+            link: {
+                mobileWebUrl: 'https://mbtitestfirsttry.netlify.app',
+                webUrl: 'https://mbtitestfirsttry.netlify.app',
+            },
+            },
+            {
+            title: '앱으로 보기',
+            link: {
+                mobileWebUrl: 'https://mbtitestfirsttry.netlify.app',
+                webUrl: 'https://mbtitestfirsttry.netlify.app',
+            },
+            },
+        ],
+        });
+    }
+    </script>
+</body>
