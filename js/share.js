@@ -1,4 +1,4 @@
-const url = 'https://clinquant-caramel-a5bc97.netlify.app/';
+const url = 'https://mbtitestfirsttry.netlify.app/';
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
