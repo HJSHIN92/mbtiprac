@@ -9,7 +9,7 @@ function setShare(){
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   Kakao.init('ef1b16b02d2eb1256c7e156b614c7572');
-  function sendLink() {
+
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
@@ -37,7 +37,7 @@ function setShare(){
         },
       ],
     })
-  }
+}  
 
   // Kakao.Share.sendDefault({
   //   objectType: 'feed',
@@ -74,7 +74,7 @@ function setShare(){
   //     },
   //   ],
   // });
-}
+
 
 
 
