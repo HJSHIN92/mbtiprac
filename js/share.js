@@ -8,41 +8,72 @@ function setShare(){
   const shareImage = url + 'img/image-' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
-  Kakao.Share.sendDefault({
-    objectType: 'feed',
-    content: {
-      title: '딸기 치즈 케익',
-      description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-      imageUrl:
-        'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-      link: {
-        // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
-        mobileWebUrl: 'https://developers.kakao.com',
-        webUrl: 'https://developers.kakao.com',
-      },
-    },
-    social: {
-      likeCount: 286,
-      commentCount: 45,
-      sharedCount: 845,
-    },
-    buttons: [
-      {
-        title: '웹으로 보기',
+  Kakao.init('ef1b16b02d2eb1256c7e156b614c7572');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '제목',
+        description: '설명',
+        imageUrl:
+          '사진주소',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'https://mbtitestfirsttry.netlify.app/',
+          webUrl: 'https://mbtitestfirsttry.netlify.app/',
         },
       },
-      {
-        title: '앱으로 보기',
-        link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
-        },
+      social: {
+        likeCount: 99999, //99999가 최대입니다
+        commentCount: 99999, //99999가 최대입니다
+        sharedCount: 99999, //99999가 최대입니다
       },
-    ],
-  });
+      buttons: [
+        {
+          title: '버튼1 글자',
+          link: {
+            mobileWebUrl: 'https://mbtitestfirsttry.netlify.app/',
+            webUrl: 'https://mbtitestfirsttry.netlify.app/',
+          },
+        },
+      ],
+    })
+  }
+
+  // Kakao.Share.sendDefault({
+  //   objectType: 'feed',
+  //   content: {
+  //     title: '딸기 치즈 케익',
+  //     description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+  //     imageUrl:
+  //       'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+  //     link: {
+  //       // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+  //       mobileWebUrl: 'https://developers.kakao.com',
+  //       webUrl: 'https://developers.kakao.com',
+  //     },
+  //   },
+  //   social: {
+  //     likeCount: 286,
+  //     commentCount: 45,
+  //     sharedCount: 845,
+  //   },
+  //   buttons: [
+  //     {
+  //       title: '웹으로 보기',
+  //       link: {
+  //         mobileWebUrl: 'https://developers.kakao.com',
+  //         webUrl: 'https://developers.kakao.com',
+  //       },
+  //     },
+  //     {
+  //       title: '앱으로 보기',
+  //       link: {
+  //         mobileWebUrl: 'https://developers.kakao.com',
+  //         webUrl: 'https://developers.kakao.com',
+  //       },
+  //     },
+  //   ],
+  // });
 }
 
 
