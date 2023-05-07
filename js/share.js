@@ -13,26 +13,25 @@ function setShare(){
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '제목',
-        description: '설명',
-        imageUrl:
-          '사진주소',
+        title: shareTitle,
+        description: shareDes,
+        imageUrl: shareImage,
         link: {
-          mobileWebUrl: 'https://mbtitestfirsttry.netlify.app/',
-          webUrl: 'https://mbtitestfirsttry.netlify.app/',
+          mobileWebUrl: shareURL,
+          webUrl: shareURL,
         },
       },
-      social: {
-        likeCount: 99999, //99999가 최대입니다
-        commentCount: 99999, //99999가 최대입니다
-        sharedCount: 99999, //99999가 최대입니다
-      },
+      // social: {
+      //   likeCount: 99999, //99999가 최대입니다
+      //   commentCount: 99999, //99999가 최대입니다
+      //   sharedCount: 99999, //99999가 최대입니다
+      // },
       buttons: [
         {
-          title: '버튼1 글자',
+          title: '나도 확인하러 가기',
           link: {
-            mobileWebUrl: 'https://mbtitestfirsttry.netlify.app/',
-            webUrl: 'https://mbtitestfirsttry.netlify.app/',
+            mobileWebUrl: shareURL,
+            webUrl: shareURL,
           },
         },
       ],
@@ -78,63 +77,63 @@ function setShare(){
 
 
 
-function kakaoShare(){
-  Kakao.Share.sendDefault({
-    objectType: 'feed',
-    content: {
-      title: '오늘의 디저트',
-      description: '아메리카노, 빵, 케익',
-      imageUrl:
-        'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
-      link: {
-        mobileWebUrl: 'https://developers.kakao.com',
-        webUrl: 'https://developers.kakao.com',
-      },
-    },
-    itemContent: {
-      profileText: 'Kakao',
-      profileImageUrl: 'https://mud-kage.kakao.com/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-      titleImageUrl: 'https://mud-kage.kakao.com/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-      titleImageText: 'Cheese cake',
-      titleImageCategory: 'Cake',
-      items: [
-        {
-          item: 'Cake1',
-          itemOp: '1000원',
-        },
-        {
-          item: 'Cake2',
-          itemOp: '2000원',
-        },
-        {
-          item: 'Cake3',
-          itemOp: '3000원',
-        },
-        {
-          item: 'Cake4',
-          itemOp: '4000원',
-        },
-        {
-          item: 'Cake5',
-          itemOp: '5000원',
-        },
-      ],
-      sum: '총 결제금액',
-      sumOp: '15000원',
-    },
-    social: {
-      likeCount: 10,
-      commentCount: 20,
-      sharedCount: 30,
-    },
-    buttons: [
-      {
-        title: '결과확인하기',
-        link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
-        },
-      }
-    ],
-  });
-}
+// function kakaoShare(){
+//   Kakao.Share.sendDefault({
+//     objectType: 'feed',
+//     content: {
+//       title: '오늘의 디저트',
+//       description: '아메리카노, 빵, 케익',
+//       imageUrl:
+//         'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+//       link: {
+//         mobileWebUrl: 'https://developers.kakao.com',
+//         webUrl: 'https://developers.kakao.com',
+//       },
+//     },
+//     itemContent: {
+//       profileText: 'Kakao',
+//       profileImageUrl: 'https://mud-kage.kakao.com/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+//       titleImageUrl: 'https://mud-kage.kakao.com/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+//       titleImageText: 'Cheese cake',
+//       titleImageCategory: 'Cake',
+//       items: [
+//         {
+//           item: 'Cake1',
+//           itemOp: '1000원',
+//         },
+//         {
+//           item: 'Cake2',
+//           itemOp: '2000원',
+//         },
+//         {
+//           item: 'Cake3',
+//           itemOp: '3000원',
+//         },
+//         {
+//           item: 'Cake4',
+//           itemOp: '4000원',
+//         },
+//         {
+//           item: 'Cake5',
+//           itemOp: '5000원',
+//         },
+//       ],
+//       sum: '총 결제금액',
+//       sumOp: '15000원',
+//     },
+//     social: {
+//       likeCount: 10,
+//       commentCount: 20,
+//       sharedCount: 30,
+//     },
+//     buttons: [
+//       {
+//         title: '결과확인하기',
+//         link: {
+//           mobileWebUrl: 'https://developers.kakao.com',
+//           webUrl: 'https://developers.kakao.com',
+//         },
+//       }
+//     ],
+//   });
+// }
