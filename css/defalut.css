@@ -2,6 +2,5 @@ body{
   background-color: pink;
 }
 
-.font-neodgm { font-family: 'NeoDunggeunmo'; }
-
-.font-neodgm-code { font-family: 'NeoDunggeunmo Code'; }
+*{ font-family: 'NeoDunggeunmo'; }
+*{ font-family: 'NeoDunggeunmo Code'; }
