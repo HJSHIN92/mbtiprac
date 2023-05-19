@@ -81,6 +81,18 @@ function goNext(qIdx){
   }
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList[qIdx].q;
+
+// 이미지부분 추가
+  var qI = document.querySelector('.qImg');
+  var qImgPlus = document.createElement('img');
+  var imgURL = 'img/' + (qIdx+1) + '.jpg';
+  imgURL.src = imgURL;
+  imgURL.alt = point;
+  imgURL.classList.add('img-fluid');
+    
+  qI.appendChild(qImgPlus);
+  
+
   for(let i in qnaList[qIdx].a){
     addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
   }
