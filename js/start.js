@@ -82,15 +82,15 @@ function goNext(qIdx){
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList[qIdx].q;
 
-// 이미지부분 추가
-  var qI = document.querySelector('.qImg');
-  var qImgPlus = document.createElement('img');
-  var imgURL = '/img/1.jpg';
-  qImgPlus.src = imgURL;
-  qImgPlus.alt = point;
-  qImgPlus.classList.add('img-fluid');
+// // 이미지부분 추가
+//   var qI = document.querySelector('.qImg');
+//   var qImgPlus = document.createElement('img');
+//   var imgURL = '/img/1.jpg';
+//   qImgPlus.src = imgURL;
+//   qImgPlus.alt = point;
+//   qImgPlus.classList.add('img-fluid');
     
-  qI.appendChild(qImgPlus);
+//   qI.appendChild(qImgPlus);
 
 
   for(let i in qnaList[qIdx].a){
