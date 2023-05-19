@@ -1,11 +1,11 @@
-const url = 'https://mbtitestfirsttry.netlify.app';
+const url = 'https://mbtitestfirsttry.netlify.app/';
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = 'J 테스트 결과는 바로바로 .. ';
   const shareDes = infoList[resultAlt].name;
-  const shareImage = url + '../img/image-' + resultAlt + '.png';
+  const shareImage = url + './img/image-' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   Kakao.init('ef1b16b02d2eb1256c7e156b614c7572');
