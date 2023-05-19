@@ -85,13 +85,13 @@ function goNext(qIdx){
 // 이미지부분 추가
   var qI = document.querySelector('.qImg');
   var qImgPlus = document.createElement('img');
-  var imgURL = 'img/' + (qIdx+1) + '.jpg';
-  imgURL.src = imgURL;
-  imgURL.alt = point;
-  imgURL.classList.add('img-fluid');
+  var imgURL = '/img/1.jpg';
+  qImgPlus.src = imgURL;
+  qImgPlus.alt = point;
+  qImgPlus.classList.add('img-fluid');
     
   qI.appendChild(qImgPlus);
-  
+// 
 
   for(let i in qnaList[qIdx].a){
     addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
