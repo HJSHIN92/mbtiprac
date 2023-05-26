@@ -120,18 +120,18 @@ const qnaList = [
 const infoList = [
   {
     name: 'J 100%',
-    desc: '계획으로 시작하고 계획으로 끝나는 당신 !'
+    desc: '다 계획이 있다고 !'
   },
   {
     name: 'J 70%',
-    desc: '꽤나 계획적인 당신. '
+    desc: '이정도면 계획적이지?'
   },
   {
     name: 'J 30%',
-    desc: '가끔은 계획적인 당신.'
+    desc: '가~끔은 계획적으로 ?'
   },
   {
     name: 'J 0%',
-    desc: '계획 그게머지? '
+    desc: '무계획이 계획이다! '
   }
 ]
